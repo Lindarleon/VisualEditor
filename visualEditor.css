@@ -230,3 +230,18 @@ body {
 .modal-content button:hover {
   background-color: #005a9e;
 }
+#elementsBtn {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+#elementsBtn:hover {
+  background-color: #005a9e;
+}
