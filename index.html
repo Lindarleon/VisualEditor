@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Editor</title>
+  <link rel="stylesheet" href="visualEditor.css">
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <button id="viewBtn">💻 View</button>
+    <button id="sidebarBtn">☰ Menu</button>
+  </div>
 
+  <!-- Sidebar Panel -->
+  <div class="sidebar" id="sidebar">
+    <label for="sizeSlider">Element Size:</label>
+    <input type="range" id="sizeSlider" min="50" max="200" value="100">
+  </div>
+
+  <!-- Main Canvas -->
+  <div class="canvas-container">
+    <div class="canvas" id="canvas">
+      <p class="canvas-label">Canvas Area</p>
+    </div>
+  </div>
+
+  <!-- Bottom Controls -->
+  <div class="bottom-controls">
+    <button id="removeBtn">🗑️ Remove</button>
+    <button id="generateBtn">💾 Generate</button>
+  </div>
+
+  <script src="visualEditor.js"></script>
+</body>
+    </html>
