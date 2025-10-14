@@ -5,37 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visual Editor</title>
   <link rel="stylesheet" href="visualEditor.css">
+  <style>
+    body { margin: 0; font-family: sans-serif; }
+    .top-bar { padding: 10px; background: #333; color: white; display: flex; gap: 10px; }
+    .sidebar { width: 200px; background: #eee; position: fixed; top: 0; left: -200px; height: 100%; transition: left 0.3s; padding: 10px; }
+    .sidebar.active { left: 0; }
+  </style>
 </head>
 <body>
   <!-- Top Bar -->
   <div class="top-bar">
-    <button id="viewBtn">💻 View</button>
     <button id="sidebarBtn">☰ Menu</button>
+    <span>Visual Editor</span>
   </div>
 
   <!-- Sidebar Panel -->
   <div class="sidebar" id="sidebar">
-  <label for="sizeSlider">Element Size:</label>
-  <input type="range" id="sizeSlider" min="50" max="200" value="100">
-
-  <!-- New Elements Button -->
-  <button id="elementsBtn">⚙️ Elements</button>
-</div>
-
-  <!-- Main Canvas -->
-  <div class="canvas-container">
-    <div class="canvas" id="canvas">
-      <p class="canvas-label">Canvas Area</p>
-    </div>
+    <p>Sidebar content goes here</p>
   </div>
 
-  <!-- Bottom Controls -->
-  <div class="bottom-controls">
-    <button id="removeBtn">🗑️ Remove</button>
-    <button id="generateBtn">💾 Generate</button>
-  </div>
-
-  /*<script src="visualEditor.js"></script>*/ 
-  <script src="pullVisualEditor.js"></script>
+  <script type="module" src="visualEditor.js"></script>
 </body>
-    </html>
+</html>
